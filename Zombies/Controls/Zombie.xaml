@@ -1,0 +1,25 @@
+﻿<UserControl x:Name="ZombieControl" x:Class="Zombie"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Width="72" Height="72" HorizontalAlignment="Left" VerticalAlignment="Top">
+    <UserControl.RenderTransform>
+        <RotateTransform CenterX="36" CenterY="36"/>
+    </UserControl.RenderTransform>
+    <Grid>
+        <Image x:Name="ZombieImage" Source="Zombie.png" Cursor="None" Margin="0,-1,0,1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.Effect>
+                <DropShadowEffect Color="#FF515151" ShadowDepth="0" BlurRadius="10"/>
+            </Image.Effect>
+        </Image>
+    </Grid>
+</UserControl>

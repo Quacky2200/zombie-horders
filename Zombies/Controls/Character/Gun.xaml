@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Gun"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="48" d:DesignWidth="48">
+    <Grid>
+        <Border x:Name="GunBorder" CornerRadius="10">
+            <Border.Background>
+                <SolidColorBrush Color="White"   Opacity="0.4"/>
+            </Border.Background>
+
+            <Image x:Name="GunImage" Stretch="Fill" Source="favicon (2).ico" Margin="5,5,5,5" RenderTransformOrigin="0.974,0.816"/>
+        </Border>
+    </Grid>
+</UserControl>
